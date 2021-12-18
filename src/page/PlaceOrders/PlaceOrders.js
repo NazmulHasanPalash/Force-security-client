@@ -9,7 +9,7 @@ const PlaceOrders = () => {
     const [serviceList, setServiceList] = useState([]);
     const [selectService, setSelectService] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/services")
+        fetch("https://thawing-escarpment-35079.herokuapp.com/services")
             .then(res => res.json())
             .then(data => setServiceList(data))
     }, [])
@@ -43,7 +43,7 @@ const PlaceOrders = () => {
 
         const newUser = { name, email, userName, image, price, address, mobileNumber };
 
-        fetch('http://localhost:5000/myOrders', {
+        fetch('https://thawing-escarpment-35079.herokuapp.com/myOrders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

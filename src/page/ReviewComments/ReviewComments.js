@@ -22,7 +22,7 @@ const ReviewComments = () => {
 
         const newUser = { email, userName, image, review, rating };
 
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://thawing-escarpment-35079.herokuapp.com/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

@@ -23,7 +23,7 @@ const AddServices = () => {
 
         const newUser = { name, image, price, duration, description };
 
-        fetch('http://localhost:5000/services', {
+        fetch('https://thawing-escarpment-35079.herokuapp.com/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
